@@ -1,0 +1,126 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+body {
+  padding: 20px;
+}
+h2, h4, p {
+  margin: 0;
+}
+
+#card {
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.35);
+  overflow: hidden;
+}
+
+#top-section {
+  width: 100%;
+  height: 45%;
+  background-color: white;
+  border-radius: 5px 5px 0px 0px;
+  padding: 30px;
+}
+#top-section h2 {
+  color: #2bb3b1;
+  margin-bottom: 20px;
+}
+#top-section h4 {
+  color: #bfdf32;
+  margin-bottom: 15px;
+}
+#top-section p {
+  color: #acb1b7;
+  margin-bottom: 5px;
+}
+
+#bottom-section{
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(179, 62%, 43%);
+  border-radius: 0px 0px 5px 5px;
+  color: white;
+}
+#bottom-section li {
+  list-style-type: none;
+}
+
+#bottom-left-section {
+  height: 100%;
+  background-color: #2bb3b1;
+  border-radius: 0px 0px 0px 5px;
+  padding: 30px;
+  flex-basis: 50%;
+}
+#bottom-left-section h4{
+  margin-bottom: 20px;
+}
+#bottom-left-section p {
+  font-size: 0.9rem;
+}
+
+#bottom-right-section {
+  height: 100%;
+  background-color: #4abebd;
+  border-radius: 0px 0px 5px 0px;
+  padding: 30px;
+  flex-basis: 50%;
+}
+#bottom-right-section ul {
+  padding: 0px;
+  font-size: 0.87rem;
+  opacity: 0.8;
+}
+#bottom-right-section li{
+  margin-bottom: 4px;
+}
+
+#price {
+  display: flex;
+  font-weight: 700;
+  margin-bottom: 10px;
+  align-items: center;
+}
+#price-number{
+  font-size: 2rem;
+}
+#price-time{
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-left: 10px;
+}
+
+button {
+  color: white;
+  background-color: #bfdf32;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.35);
+  padding: 10px;
+  width: 100%;
+  margin-top: 32px;
+}
+button:hover{
+  cursor: pointer;
+  background-color: #A8C42B;
+  transform: scale(1.02);
+}
+
+@media (min-width: 576px) {
+  #card {
+    width: 550px;
+    height: 450px;  
+  }
+  #bottom-section{
+    flex-direction: row;
+  }
+}
